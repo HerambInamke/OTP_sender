@@ -37,7 +37,7 @@ function ResetPassword() {
     }
     
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/reset-password', {
+      const response = await axios.post('https://otpsender-production.up.railway.app/api/auth/reset-password', {
         email,
         otp,
         newPassword

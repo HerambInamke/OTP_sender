@@ -15,7 +15,7 @@ function Login() {
     setMessage('');
     
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', {
+      const response = await axios.post('https://otpsender-production.up.railway.app/api/auth/login', {
         email,
         password
       });
@@ -27,7 +27,7 @@ function Login() {
       
       // Redirect user to dashboard after successful login
       setTimeout(() => {
-        window.location.href = '/dashboard';
+        window.location.href = 'https://s72-heramb-inamke-emojicringechronicles.pages.dev';
       }, 2000);
       
     } catch (error) {

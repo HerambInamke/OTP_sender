@@ -14,7 +14,7 @@ function ForgotPassword() {
     setMessage('');
     
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/forgot-password', { email });
+      const response = await axios.post('https://otpsender-production.up.railway.app/api/auth/forgot-password', { email });
       setMessageType('success');
       setMessage(response.data.message);
       
