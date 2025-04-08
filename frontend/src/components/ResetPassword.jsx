@@ -77,7 +77,7 @@ function ResetPassword() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="otp">Enter 6-digit OTP sent to your email</label>
+          <label htmlFor="otp">Enter 6-digit OTP sent to your email (check in the spam)</label>
           <input
             type="text"
             id="otp"
