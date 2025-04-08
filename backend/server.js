@@ -13,7 +13,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:5173', // Default Vite dev server port
+  origin: ['https://otp-psi-liard.vercel.app'], // Allow both local and production URLs
   credentials: true
 }));
 

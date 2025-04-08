@@ -44,14 +44,14 @@ function ResetPassword() {
       });
       
       setMessageType('success');
-      setMessage(response.data.message);
+      setMessage('Password reset successful! Redirecting...');
       
       // Clear sessionStorage
       sessionStorage.removeItem('resetEmail');
       
-      // Redirect to login after successful reset
+      // Redirect to the specified URL after successful reset
       setTimeout(() => {
-        navigate('/login');
+        window.location.href = 'https://s72-heramb-inamke-emojicringechronicles.pages.dev';
       }, 2000);
       
     } catch (error) {
