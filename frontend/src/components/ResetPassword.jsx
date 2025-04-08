@@ -49,7 +49,7 @@ function ResetPassword() {
       // Clear sessionStorage
       sessionStorage.removeItem('resetEmail');
       
-      // Redirect to the specified URL after successful reset
+      // Redirect to the dashboard after successful reset
       setTimeout(() => {
         window.location.href = 'https://s72-heramb-inamke-emojicringechronicles.pages.dev';
       }, 2000);
