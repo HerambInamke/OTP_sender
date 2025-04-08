@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 function ForgotPassword() {
@@ -7,6 +7,7 @@ function ForgotPassword() {
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [messageType, setMessageType] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,7 +24,7 @@ function ForgotPassword() {
       
       // Redirect to reset password page
       setTimeout(() => {
-        window.location.href = '/reset-password';
+        navigate('/reset-password');
       }, 2000);
       
     } catch (error) {
