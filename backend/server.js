@@ -13,7 +13,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: ['https://otp-psi-liard.vercel.app'], // Allow both local and production URLs
+  origin: ['https://otp-psi-liard.vercel.app', 'http://localhost:5173'], // Allow both Netlify and local URLs
   credentials: true
 }));
 
